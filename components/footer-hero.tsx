@@ -75,7 +75,7 @@ export default function FooterHero() {
               © {new Date().getFullYear()} Invoice Generator. All rights reserved.
             </p>
             <p className="text-gray-600 text-sm flex items-center">
-              Made with <Heart className="h-4 w-4 text-red-500 mx-1" /> for freelancers and small businesses
+              Made  from Tamil Nadu with <Heart className="h-4 w-4 text-red-500 mx-1" /> for freelancers and small businesses
             </p>
           </div>
         </div>
