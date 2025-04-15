@@ -3,7 +3,7 @@
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import MobileMenu from "./mobile-menu"
-
+import Image from 'next/image';
 export default function HeaderHero() {
   return (
     <div className="bg-white">
@@ -67,17 +67,18 @@ export default function HeaderHero() {
           </div>
 
           <div className="hidden md:block">
-            <div className="relative">
-              <div className="bg-white rounded-lg shadow-lg p-8 mx-auto max-w-md">
-                <div className="bg-green-100 h-8 w-1/3 rounded mb-6"></div>
-                <div className="space-y-4">
-                  <div className="bg-gray-100 h-12 w-full rounded"></div>
-                  <div className="bg-gray-100 h-24 w-full rounded"></div>
-                  <div className="bg-gray-100 h-12 w-full rounded"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+  <div className="relative">
+    {/* Replace placeholder divs with Image component */}
+    <Image
+      src="/public/invoice-preview.png" // Path to your image in public folder
+      alt="Invoice Generator Preview"
+      width={800} // Adjust to match your image dimensions
+      height={600}
+      className="rounded-lg shadow-lg mx-auto max-w-md"
+      priority // Optional: if this image is above the fold
+    />
+  </div>
+</div>
         </div>
       </div>
     </div>
